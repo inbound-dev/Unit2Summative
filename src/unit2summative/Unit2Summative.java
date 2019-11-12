@@ -28,11 +28,14 @@ public class Unit2Summative {
     public static void main(String[] args) {
         
         // Create Scanner obj
-        Scanner UserInput = new Scanner(System.in);
+       Scanner UserInput = new Scanner(System.in);
         
         // generate random number
         Random rand = new Random(1);
         int RN = rand.nextInt(4);
+        String RNG = String.valueOf(RN);
+        
+        
         
         
         // Ask for user input 
@@ -43,99 +46,107 @@ public class Unit2Summative {
         System.out.println("ps you Must Enter a Number, Hit Enter then Hit Enter Again");
         System.out.println("");
         System.out.println("Please Make Your First Choice, 1. Rock, 2. Paper or 3. Scissors");
+        System.out.println(RN);
+        System.out.println("");
         
         // parse scanner for array
-        int RPS = Integer.parseInt(UserInput.nextLine());
+        int RPS = Integer.parseInt(UserInput.nextLine()); 
         
         // creating array
-        String input[] = new String[RPS];
+        int input[] = new int[RPS];
         
         // storing user discion in an array
         for (int i = 0; i < input.length; i++)
         {
-            input[i] = UserInput.nextLine();
+            input[i] = UserInput.nextInt();
         }
+       
         // sorting user disicion
-        if (input.equals("1") & RN == 2)
+        if (input.equals("1") && RN == 2)
         {
         // All three Options For Rock
-        for (int i = 0; i < input.length; i++) 
-        {
+         
+        
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Paper");
             System.out.println("You Lost");
-        }
+            System.out.println(RN);
+            System.exit(0);
         
         }
-        if (input.equals("1") & RN == 1) 
+        if (input.equals("1") && RN == 1) 
         {
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Rock");
             System.out.println("Draw");
-
+            System.out.println(RN);
+            System.exit(0);
         }
-        if (input.equals("1") & RN == 3)
+        if (input.equals("1") && RN == 3)
         {
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Scissors");
             System.out.println("Congratualations You Won");
-
+            System.out.println(RN);
+            System.exit(0);
         }
         // All Options For Paper
-        if (input.equals(2) || RN == 1)
+        if (input.equals("2") && RN == 1)
         {
-            for (int i = 0; i < 1; i++)
-            {
+            
             System.out.println("You Chose Paper");
             System.out.println("The Computer Chose Rock");
             System.out.println("ConGratulations You Won");
-            }
+            System.out.println(RN);
+            System.exit(0);
+            
         }
-         if (input.equals(2) || RN == 2)
+         if (input.equals("2") && RN == 2)
         {
-            for (int i = 0; i < 1; i++)
-            {
+            
+                System.out.println(RN);
             System.out.println("You Chose Paper");
             System.out.println("The Computer Chose Paper");
             System.out.println("Draw");
-            }
+            System.exit(0);
+            
         }
-          if (input.equals(2) || RN == 3)
+          if (input.equals("2") && RN == 3)
         {
-            for (int i = 0; i < 1; i++)
-            {
+           
             System.out.println("You Chose Paper");
             System.out.println("The Computer Chose Scissors");
             System.out.println("You Lost");
-            }
+            System.exit(0);
+            
         }
           // All Options for Scissors+
-        if (input.equals(3) || RN == 1)
+        if (input.equals("3") && RN == 1)
         {
-            for (int i = 0; i < 1; i++)
-            {
+           
             System.out.println("You Chose Scissors");
             System.out.println("The Computer Chose Rock");
             System.out.println("Sorry You Lost");
-            }
+            System.exit(0);
+            
         }
-        if (input.equals(3) || RN == 2)
+        if (input.equals("3") && RN == 2)
         {
-            for (int i = 0; i < 1; i++)
-            {
+           
             System.out.println("You Chose Scissors");
             System.out.println("The Computer Chose Paper");
             System.out.println("Congratulations You Won");
-            }
+            System.exit(0);
+            
         }
-        if (input.equals(3) || RN == 3)
+        if (input.equals("3") && RN == 3)
         {
-            for (int i = 0; i < 1; i++)
-            {
+            
             System.out.println("You Chose Scissors");
             System.out.println("The Computer Chose Scisssors");
             System.out.println("Draw");
-            }
+            System.exit(0);
+            
         }  
     }
 }
