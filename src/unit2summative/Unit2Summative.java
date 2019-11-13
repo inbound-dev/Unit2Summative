@@ -14,11 +14,9 @@ package unit2summative;
 import java.util.Scanner;
 import java.util.Random;
 
-
-
 /**
  *
- * @author joham3169
+ * @author Jordan Hamilton
  */
 public class Unit2Summative {
 
@@ -33,11 +31,11 @@ public class Unit2Summative {
         // generate random number
         int RN = new Random().nextInt(4);
                 
-        
-        
-        
-        
-        
+        if (RN == 0)
+        {
+           RN = RN + 1;
+        }
+
         // Ask for user input 
         System.out.println("Welcome to Rock, Paper, Scissors");
         System.out.println("");
@@ -48,9 +46,6 @@ public class Unit2Summative {
         System.out.println("Please Make Your First Choice, 1. Rock, 2. Paper or 3. Scissors");
         System.out.println(RN);
         System.out.println("");
-        
-        // parse scanner for array
-       // int RPS = Integer.parseInt(UserInput.nextLine()); 
         
         // creating array
         int input1[] = new int[1];
