@@ -1,9 +1,9 @@
 /*
  * This project is a rock paper scissors game.
  * This game askes for user input and stores that in an array.
- * then the computer makes its disicion based on a random number bettween 1 and 3.
+ * then the computer makes its desicion based on a random number bettween 1 and 3.
  * since there is no truly random numbers in computer generation, there is no way to become strategy 
- * risistant, so it is possible to to get the same sequence, but it is scarce.
+ * resistant, so it is possible to to get the same sequence, but it is scarce.
  * there can be 2 outcomes win or loss per game at the end of the game 
  * it prints how many times each disicion was made by the computer and by the person
  * and weather they won or lost overall.
@@ -28,12 +28,12 @@ public class Unit2Summative {
     public static void main(String[] args) {
         
         // Create Scanner obj
-       Scanner UserInput = new Scanner(System.in);
+       Scanner userInput = new Scanner(System.in);
         
         // generate random number
-        Random rand = new Random(1);
-        int RN = rand.nextInt(4);
-        String RNG = String.valueOf(RN);
+        int RN = new Random().nextInt(4);
+                
+        
         
         
         
@@ -50,19 +50,15 @@ public class Unit2Summative {
         System.out.println("");
         
         // parse scanner for array
-        int RPS = Integer.parseInt(UserInput.nextLine()); 
+       // int RPS = Integer.parseInt(UserInput.nextLine()); 
         
         // creating array
-        int input[] = new int[RPS];
-        
-        // storing user discion in an array
-        for (int i = 0; i < input.length; i++)
-        {
-            input[i] = UserInput.nextInt();
-        }
+        int input1[] = new int[1];
+        int joe = userInput.nextInt();
+        input1[0] = joe;
        
         // sorting user disicion
-        if (input.equals("1") && RN == 2)
+        if (input1[0]==1 && RN == 2)
         {
         // All three Options For Rock
          
@@ -74,7 +70,7 @@ public class Unit2Summative {
             System.exit(0);
         
         }
-        if (input.equals("1") && RN == 1) 
+        if (input1[0]==1 && RN == 1) 
         {
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Rock");
@@ -82,7 +78,7 @@ public class Unit2Summative {
             System.out.println(RN);
             System.exit(0);
         }
-        if (input.equals("1") && RN == 3)
+        if (input1[0]==1 && RN == 3)
         {
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Scissors");
@@ -91,7 +87,7 @@ public class Unit2Summative {
             System.exit(0);
         }
         // All Options For Paper
-        if (input.equals("2") && RN == 1)
+        if (input1[0]==2 && RN == 1)
         {
             
             System.out.println("You Chose Paper");
@@ -101,7 +97,7 @@ public class Unit2Summative {
             System.exit(0);
             
         }
-         if (input.equals("2") && RN == 2)
+         if (input1[0]==2 && RN == 2)
         {
             
                 System.out.println(RN);
@@ -111,7 +107,7 @@ public class Unit2Summative {
             System.exit(0);
             
         }
-          if (input.equals("2") && RN == 3)
+          if (input1[0]==2 && RN == 3)
         {
            
             System.out.println("You Chose Paper");
@@ -121,7 +117,7 @@ public class Unit2Summative {
             
         }
           // All Options for Scissors+
-        if (input.equals("3") && RN == 1)
+        if (input1[0]==3 && RN == 1)
         {
            
             System.out.println("You Chose Scissors");
@@ -130,7 +126,7 @@ public class Unit2Summative {
             System.exit(0);
             
         }
-        if (input.equals("3") && RN == 2)
+        if (input1[0]==3 && RN == 2)
         {
            
             System.out.println("You Chose Scissors");
@@ -139,7 +135,7 @@ public class Unit2Summative {
             System.exit(0);
             
         }
-        if (input.equals("3") && RN == 3)
+        if (input1[0]==3 && RN == 3)
         {
             
             System.out.println("You Chose Scissors");
@@ -150,3 +146,5 @@ public class Unit2Summative {
         }  
     }
 }
+
+
