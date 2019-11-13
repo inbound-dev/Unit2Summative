@@ -14,6 +14,8 @@ package unit2summative;
 import java.util.Scanner;
 import java.util.Random;
 
+
+
 /**
  *
  * @author Jordan Hamilton
@@ -33,7 +35,7 @@ public class Unit2Summative {
                 
         if (RN == 0)
         {
-           RN = RN + 1;
+           RN = RN + 1; 
         }
 
         // Ask for user input 
@@ -44,8 +46,8 @@ public class Unit2Summative {
         System.out.println("ps you Must Enter a Number, Hit Enter then Hit Enter Again");
         System.out.println("");
         System.out.println("Please Make Your First Choice, 1. Rock, 2. Paper or 3. Scissors");
-        System.out.println(RN);
-        System.out.println("");
+       // System.out.println(RN);
+        //System.out.println("");
         
         // creating array
         int input1[] = new int[1];
@@ -61,7 +63,7 @@ public class Unit2Summative {
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Paper");
             System.out.println("You Lost");
-            System.out.println(RN);
+          //  System.out.println(RN);
             System.exit(0);
         
         }
@@ -70,7 +72,7 @@ public class Unit2Summative {
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Rock");
             System.out.println("Draw");
-            System.out.println(RN);
+           // System.out.println(RN);
             System.exit(0);
         }
         if (input1[0]==1 && RN == 3)
@@ -78,7 +80,7 @@ public class Unit2Summative {
             System.out.println("You Chose Rock");
             System.out.println("The Computer Chose Scissors");
             System.out.println("Congratualations You Won");
-            System.out.println(RN);
+           // System.out.println(RN);
             System.exit(0);
         }
         // All Options For Paper
@@ -88,14 +90,14 @@ public class Unit2Summative {
             System.out.println("You Chose Paper");
             System.out.println("The Computer Chose Rock");
             System.out.println("ConGratulations You Won");
-            System.out.println(RN);
+           // System.out.println(RN);
             System.exit(0);
             
         }
          if (input1[0]==2 && RN == 2)
         {
             
-                System.out.println(RN);
+            // System.out.println(RN);
             System.out.println("You Chose Paper");
             System.out.println("The Computer Chose Paper");
             System.out.println("Draw");
