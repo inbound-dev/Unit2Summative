@@ -43,8 +43,6 @@ public class Unit2Summative {
         System.out.println("");
         System.out.println("In This Game There are Three Options, Rock, Paper, and Scissors");
         System.out.println("");
-        System.out.println("ps you Must Enter a Number, Hit Enter then Hit Enter Again");
-        System.out.println("");
         System.out.println("Please Make Your First Choice, 1. Rock, 2. Paper or 3. Scissors");
        // System.out.println(RN);
         //System.out.println("");
